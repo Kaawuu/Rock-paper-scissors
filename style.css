@@ -1,0 +1,73 @@
+*{
+    font-family: Tahoma;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.symbols {
+    display:flex;
+    justify-content: space-around;
+    
+}
+.symbol {
+    cursor: pointer;
+    border:5px solid black;
+    border-radius: 10px;
+}
+
+//na duzy ekran     height: 200px;
+flex: 200px 1 1;
+
+.symbols_symbol {
+    background-color: rgb(255, 230, 233);
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 200px;
+}
+
+.symbols_symbol:hover {
+    border:5px solid;
+    background-color: rgb(223, 136, 153);
+}
+
+.symbol:hover {
+    border:5px solid;
+}
+
+#score{
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.symbols_drawn {
+    border:0
+}
+.symbols_drawn .symbol {
+    border:0;
+    cursor:default;
+    text-align:center;
+    align-self: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.symbol_vs {
+    height: unset;
+    align-self: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .symbols {
+       flex-direction: column;
+    }
+
+    .symbol {
+        height: 200px;
+        flex: 200px 1 1;
+    }
+}

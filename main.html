@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Kamień, Papier, Nożyczki</title>
+</head>
+<body>
+    <h1>Kamień, Papier, Nożyczki</h1>
+    <h2>Wybierz czym chcesz zagrać</h2>
+    <div class="symbols">
+        <div class="symbols_symbol symbol" onclick="choose('kamień')">Kamień</div>
+        <div class="symbols_symbol symbol" onclick="choose('papier')">Papier</div>
+        <div class="symbols_symbol symbol" onclick="choose('nożyczki')">Nożyczki</div>
+    </div>
+    <div id="score"></div>
+    <div class="symbols symbols_drawn">
+        <div id="symbol_player" class="symbol">
+            Ty
+            <p id='player-result'></p>
+        </div>
+        <div class="symbol symbol_vs">VS</div>
+        <div id="symbol_computer" class="symbol">
+            Komputer
+            <p id='computer-result'></p>
+        </div>
+    </div>
+</body>
+</html>
